@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Feed from '../coponents/Feed'
 import Sidebar from '../coponents/Sidebar'
+import Widgets from '../coponents/Widgets'
 
 const Home: NextPage = () => {
   return (
@@ -11,14 +12,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className='grid grid-cols-9'>
 
         <Sidebar />
 
-        {/* feed */}
+        <Feed />
 
 
-        {/* widget */}
+       <Widgets />
 
       </main>
     </div>
