@@ -1,4 +1,5 @@
 import { SearchIcon } from '@heroicons/react/outline'
+import { maxHeaderSize } from 'http';
 import React from 'react'
 import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
@@ -12,10 +13,11 @@ function Widgets() {
             <input type="text" placeholder='Search Twitter' 
              className=' flex-1 bg-transparent outline-none'/>
         </div>
+
         <TwitterTimelineEmbed
             sourceType="profile"
             screenName="neymarjr"
-            options={{height: 400}}
+            options={{height: maxHeaderSize}}
             />
 
 
